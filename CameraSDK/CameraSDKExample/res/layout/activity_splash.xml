@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center" >
+    
+    <ImageView 
+        android:id="@+id/iv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_camera"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="12dp"
+        android:contentDescription="@string/app_name" />
+	<ImageView 
+        android:id="@+id/iv_album"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ico_album"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="12dp"
+        android:contentDescription="@string/app_name" />
+</LinearLayout>

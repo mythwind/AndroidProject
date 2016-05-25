@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camerasdk_app_name">camerasdk</string>
+	<string name="camerasdk_album_all">Camera</string>
+	<string name="camerasdk_album">Choose Album</string>
+	<string name="camerasdk_album_button">Album</string>
+	<string name="camerasdk_cancel">Cancel</string>
+	<string name="camerasdk_back">Back</string>
+	<string name="camerasdk_delete">Delete</string>
+	<string name="camerasdk_preview_image">Preview</string>
+	<string name="camerasdk_msg_no_camera">No Camera</string>
+    <string name="camerasdk_msg_amount_limit">Limited max choise</string>
+    <string name="camerasdk_images_building">Saving....</string>
+    
+    <string name="camerasdk_tab_filter">Effect</string>
+    <string name="camerasdk_tab_sticker">Sticker</string>
+    <string name="camerasdk_tab_cropper">Crop</string>
+    <string name="camerasdk_tab_graffiti">Brush</string>
+    <string name="camerasdk_tab_enhance">Editor</string>
+    
+    <string name="camerasdk_graffiti_brush">Brush</string>
+    <string name="camerasdk_graffiti_color_chooser">Color</string>
+    <string name="camerasdk_graffiti_eraser">Eraser</string>
+    
+    <string name="camerasdk_editor_brightness">Brightness</string>
+    <string name="camerasdk_editor_saturation">Saturation</string>
+    <string name="camerasdk_editor_contrast">Contrast</string>
+    
+    <string name="camerasdk_take_photos">Take Photos</string>
+    <string name="camerasdk_choose">Choose</string>
+    <string name="camerasdk_save">Save</string>
+    <string name="camerasdk_rotate">Rotate</string>
+    <string name="camerasdk_save_path">Photo Saved Path：%1$s</string>
+    
+    <string name="camerasdk_quality_title">Choose Saved Bitmap Quality</string>
+    <string name="camerasdk_quality_high">High Quality</string>
+    <string name="camerasdk_quality_normal">Normal Quality</string>
+    <string name="camerasdk_quality_small">Low Quality</string>
+    
+</resources>

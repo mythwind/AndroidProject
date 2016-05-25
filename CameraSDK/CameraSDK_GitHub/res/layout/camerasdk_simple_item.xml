@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+    <!-- 
+    <ImageView 
+        android:id="@+id/camerasdk_simple_icon"
+        android:layout_width="@dimen/bottom_image_width"
+        android:layout_height="@dimen/bottom_image_width"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:contentDescription="@string/camerasdk_app_name" />
+     -->
+    <com.muzhi.camerasdk.library.filter.GPUImageView
+        android:id="@+id/camerasdk_simple_icon"
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView 
+        android:id="@+id/camerasdk_simple_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:textColor="@color/camerasdk_txt_normal" />
+    
+</LinearLayout>

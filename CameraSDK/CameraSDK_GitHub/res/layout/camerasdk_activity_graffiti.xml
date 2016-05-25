@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/camerasdk_main_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/camerasdk_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/drawLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <com.muzhi.camerasdk.library.scrawl.DrawingBoardView
+            android:id="@+id/drawView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:background="@color/camerasdk_main_tools_bg"
+        android:gravity="center"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:max="10"
+            android:progress="5"
+            android:thumb="@drawable/camerasdk_icon_seek_thumb" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"
+            android:thumb="@drawable/camerasdk_icon_seek_thumb"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/camerasdk_main_bottom_bg"
+        android:gravity="center"
+        android:padding="5dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/brush_view_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/camerasdk_icon_graffiti_button_color"
+            android:text="@string/camerasdk_graffiti_color_chooser"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            android:drawablePadding="3dip"
+            android:gravity="center"
+            android:clickable="true" />
+
+        <RadioButton
+            android:id="@+id/button_brush"
+            style="@style/camerasdk_radio_button"
+            android:checked="true"
+            android:layout_marginLeft="80dip"
+            android:drawableTop="@drawable/camerasdk_icon_graffiti_button_brush"
+            android:text="@string/camerasdk_graffiti_brush" />
+
+        <RadioButton
+            android:id="@+id/button_eraser"
+            style="@style/camerasdk_radio_button"
+            android:layout_marginLeft="80dip"
+            android:drawableTop="@drawable/camerasdk_icon_graffiti_button_eraser"
+            android:text="@string/camerasdk_graffiti_eraser" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camerasdk_app_name">camerasdk</string>
+	<string name="camerasdk_album_all">相機膠捲</string>
+	<string name="camerasdk_album">選擇相冊</string>
+	<string name="camerasdk_album_button">相冊</string>
+	<string name="camerasdk_cancel">取消</string>
+	<string name="camerasdk_back">返回</string>
+	<string name="camerasdk_delete">刪除</string>
+	<string name="camerasdk_preview_image">圖片預覽</string>
+	<string name="camerasdk_msg_no_camera">沒有系統相機</string>
+    <string name="camerasdk_msg_amount_limit">已經達到最高選擇數量</string>
+    <string name="camerasdk_images_building">處理圖片</string>
+    
+    <string name="camerasdk_tab_filter">特效</string>
+    <string name="camerasdk_tab_sticker">貼紙</string>
+    <string name="camerasdk_tab_cropper">裁剪</string>
+    <string name="camerasdk_tab_graffiti">筆刷</string>
+    <string name="camerasdk_tab_enhance">編輯</string>
+    
+    <string name="camerasdk_graffiti_brush">筆刷</string>
+    <string name="camerasdk_graffiti_color_chooser">取色器</string>
+    <string name="camerasdk_graffiti_eraser">橡皮擦</string>
+    
+    <string name="camerasdk_editor_brightness">亮度</string>
+    <string name="camerasdk_editor_saturation">飽和度</string>
+    <string name="camerasdk_editor_contrast">對比度</string>
+    
+    
+    <string name="camerasdk_take_photos">拍攝照片</string>
+    <string name="camerasdk_choose">選取</string>
+    <string name="camerasdk_save">保存</string>
+    <string name="camerasdk_rotate">旋轉</string>
+    <string name="camerasdk_save_path">圖片已保存到：%1$s</string>
+    
+</resources>
