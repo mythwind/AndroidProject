@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/common_bg_color" >
+	
+    <LinearLayout
+        android:id="@+id/ll_integral_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDE4AC"
+        android:minHeight="@dimen/button_commit_minheight" >
+		
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:layout_marginLeft="6dip"
+            android:text="@string/virtual_currency_desc"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/virtual_currency_amount"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv_integral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_integral_head"
+        android:layout_above="@+id/ll_integral_bottom"
+        ptr:ptrMode="both"
+        ptr:ptrScrollingWhileRefreshingEnabled="true"
+        ptr:ptrShowIndicator="false" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+	<LinearLayout 
+	    android:id="@+id/ll_integral_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+        
+        <TextView 
+            android:id="@+id/tv_integral_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/tv_integral_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:padding="12dip"
+            android:background="@drawable/btnbg_selector"
+            android:gravity="center"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:text="@string/integral_purchase"
+            android:textSize="16sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+	
+    <include layout="@layout/hint_loading_layout" />
+    
+</RelativeLayout>

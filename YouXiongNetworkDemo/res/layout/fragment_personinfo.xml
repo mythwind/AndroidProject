@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="@color/common_bg_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		
+        <ImageView
+            android:id="@+id/frag_person_icon"
+            android:layout_width="@dimen/icon_width_big"
+            android:layout_height="@dimen/icon_height_big"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/ic_launcher" />
+        <TextView 
+            android:id="@+id/frag_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/frag_person_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+        <TextView 
+            android:id="@+id/frag_tv_person_face_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp" />
+        
+        <View 
+            android:layout_marginTop="12dp"
+            style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_credit" />
+
+            <TextView
+                android:id="@+id/person_credit_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <View style="@style/DivideLineStyle" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_perfession" />
+
+            <TextView
+                android:id="@+id/person_profession_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/distance" />
+
+            <TextView 
+                android:id="@+id/person_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/user_level" />
+
+            <TextView 
+                android:id="@+id/frag_tv_person_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+
+        <View 
+            android:layout_marginTop="12dp"
+            style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_mobile" />
+
+            <TextView 
+                android:id="@+id/person_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+		<View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_telephone" />
+
+            <TextView 
+                android:id="@+id/person_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_email" />
+
+            <TextView 
+                android:id="@+id/person_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_soft_name" />
+
+            <TextView
+                android:id="@+id/person_soft_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_soft_num" />
+
+            <TextView
+                android:id="@+id/person_soft_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_address" />
+
+            <TextView
+                android:id="@+id/person_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_worktime" />
+
+            <TextView
+                android:id="@+id/person_worktime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_category" />
+
+            <TextView 
+                android:id="@+id/person_profession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle"
+            android:layout_marginBottom="15dp" />
+        
+    </LinearLayout>
+
+</ScrollView>

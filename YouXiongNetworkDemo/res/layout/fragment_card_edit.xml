@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#E9ECF1" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+		<View
+            style="@style/DivideLineStyle"
+            android:layout_marginTop="16dp" />
+
+        <LinearLayout 
+            android:id="@+id/frag_view_person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="16sp" 
+                android:text="@string/person_name" />
+
+            <TextView 
+                android:id="@+id/frag_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+		<View style="@style/DivideLineStyle" />
+    	<LinearLayout
+    	    android:id="@+id/view_frag_person_gender"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/item_selector"
+	        android:gravity="center_vertical"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="16sp" 
+	            android:text="@string/user_gender" />
+	
+	        <RadioGroup 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:checkedButton="@+id/frag_person_male"
+	            android:gravity="right"
+	            android:orientation="horizontal" >
+	
+	            <!-- android:button="@drawable/btn_radio_holo_light" -->
+	            <RadioButton
+	                android:id="@+id/frag_person_male"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:padding="5dip"
+	                android:button="@null"
+	                android:drawableLeft="@drawable/btn_radio_holo_light"
+	                android:text="@string/user_gender_male" />
+	
+	            <RadioButton
+	                android:id="@+id/frag_person_female"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:padding="5dip"
+	                android:button="@null"
+	                android:drawableLeft="@drawable/btn_radio_holo_light"
+	                android:text="@string/user_gender_female" />
+	        </RadioGroup>
+	    </LinearLayout>
+        
+        <View style="@style/DivideLineStyle" />
+        <LinearLayout 
+            android:id="@+id/frag_view_person_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="16sp" 
+                android:text="@string/person_card_title" />
+
+            <TextView 
+                android:id="@+id/frag_person_card_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+    	
+		<View style="@style/DivideLineStyle" />
+        
+        <View
+            style="@style/DivideLineStyle"
+            android:layout_marginTop="16dp" />
+        <LinearLayout
+            android:id="@+id/frag_view_person_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:textSize="16sp" 
+                android:text="@string/person_mobile" />
+
+            <TextView 
+                android:id="@+id/frag_person_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:id="@+id/frag_view_person_telephone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_telephone" />
+
+            <TextView
+                android:id="@+id/frag_person_telephone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:id="@+id/frag_view_person_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_email"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/frag_person_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+	        android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_worktime" />
+
+            <TextView 
+                android:id="@+id/frag_person_week_start"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/item_selector"
+                android:textSize="16sp" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/between"
+                android:padding="10dip" />
+            <TextView 
+                android:id="@+id/frag_person_week_stop"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/item_selector"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+	        android:background="@color/white"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_worktime"
+                android:visibility="invisible" />
+
+            <TextView 
+                android:id="@+id/frag_person_time_start"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/item_selector"
+                android:textSize="16sp" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/between"
+                android:padding="10dip" />
+            <TextView 
+                android:id="@+id/frag_person_time_stop"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:background="@drawable/item_selector"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+         <View
+            style="@style/DivideLineStyle"
+            android:layout_marginTop="16dp" />
+        <LinearLayout 
+            android:id="@+id/frag_view_person_soft_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_soft_name" />
+
+            <TextView
+                android:id="@+id/frag_person_soft_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout 
+            android:id="@+id/frag_view_person_soft_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_soft_num" />
+
+            <TextView
+                android:id="@+id/frag_person_soft_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+         <View
+            style="@style/DivideLineStyle"
+            android:layout_marginTop="16dp" />
+        <LinearLayout 
+            android:id="@+id/frag_view_person_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_choose_city" />
+
+            <TextView 
+                android:id="@+id/frag_person_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/arrow_right"
+            	android:drawablePadding="8dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <View style="@style/DivideLineStyle" />
+        
+        <LinearLayout
+            android:id="@+id/frag_view_person_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/person_address" />
+
+            <TextView 
+                android:id="@+id/frag_person_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+		<View style="@style/DivideLineStyle" />
+
+		<View
+		    style="@style/DivideLineStyle"
+		    android:layout_marginTop="16dp" />
+
+		<LinearLayout
+            android:id="@+id/frag_view_person_trade_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+	        android:paddingRight="16dp"
+	        android:minHeight="48dp"
+            android:background="@drawable/item_selector"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" 
+                android:text="@string/trade_title" />
+
+            <TextView 
+                android:id="@+id/frag_person_trade_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableRight="@drawable/arrow_right"
+            	android:drawablePadding="8dp"
+            	android:paddingTop="8dp"
+            	android:paddingBottom="8dp"
+                android:gravity="right"
+                android:textSize="16sp" />
+        </LinearLayout>
+		
+        <TextView
+	        android:id="@+id/card_edit_commit"
+	        style="@style/ButtonCommitStyle"
+	        android:text="@string/commit" />
+    </LinearLayout>
+
+</ScrollView>

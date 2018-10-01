@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg_color" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:textSize="18sp"
+        android:textColor="#666666"
+        android:text="@string/product_setting_search" />
+
+    <EditText
+        android:id="@+id/product_setting_et_search_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:paddingLeft="16dip"
+        android:paddingRight="16dip"
+        android:background="@color/white"
+        android:textSize="18sp"
+        android:textColor="#2B2B2B"
+        android:textColorHint="#CCCCCC"
+        android:hint="@string/hint_keywords" />
+    
+    <TextView
+        android:id="@+id/product_setting_tv_search"
+        style="@style/ButtonCommitStyle"
+        android:text="@string/product_setting_save" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:hint="打开管理" />
+
+</LinearLayout>

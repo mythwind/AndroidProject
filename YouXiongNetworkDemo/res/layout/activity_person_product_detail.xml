@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/product_detail_option"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+        <TextView 
+            android:id="@+id/product_tv_detail_modify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/item_product_detail_selector"
+            android:drawableTop="@drawable/product_modify"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/modify" />
+        <TextView 
+            android:id="@+id/product_tv_detail_offline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/item_product_detail_selector"
+            android:drawableTop="@drawable/product_offline"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/offline" />
+        <TextView 
+            android:id="@+id/product_tv_detail_publish"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/item_product_detail_selector"
+            android:drawableTop="@drawable/product_publish"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/publish" />
+        <TextView 
+            android:id="@+id/product_tv_detail_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:background="@drawable/item_product_detail_selector"
+            android:drawableTop="@drawable/product_delete"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="@string/delete" />
+    </LinearLayout>
+    <include 
+        android:layout_above="@id/product_detail_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/layout_persion_product_detail" />
+
+    <include layout="@layout/hint_loading_layout" />
+    
+</RelativeLayout>

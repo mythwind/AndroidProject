@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="20dip"
+        android:text="@string/reset_password_by_email"
+        android:textColor="#666666" />
+
+    <EditText
+        android:id="@+id/reset_registe_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_item_bg"
+        android:hint="@string/hint_user_name"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#C7C7CD"
+        android:textColor="#2B2B2B"
+        android:minHeight="48dp"
+        android:paddingLeft="20dip"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/reset_password"
+        style="@style/ButtonCommitStyle"
+        android:text="@string/reset_password" />
+
+</LinearLayout>

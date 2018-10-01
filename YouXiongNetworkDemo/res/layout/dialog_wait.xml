@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@drawable/shape_collection"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/wait_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:indeterminateDrawable="@drawable/dialog_waiting_cursor" />
+    
+    <ImageView
+        android:id="@+id/wait_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/loading_cursor"
+        android:contentDescription="@string/contentDescription"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/wait_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="@string/loading"
+        android:textSize="16sp"
+        android:textColor="@color/white" />
+
+</LinearLayout>

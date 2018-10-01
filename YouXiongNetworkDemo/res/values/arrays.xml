@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_person_info">
+        <item>用户名片</item>
+        <item>产品信息</item>
+    </string-array>
+    <string-array name="tab_friends_info">
+        <item>好友</item>
+        <item>访问</item>
+        <item>申请</item>
+        <item>关注</item>
+        <item>黑名单</item>
+    </string-array>
+    
+    <string-array name="user_gender_info">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    
+    <string-array name="individual_info">
+        <item>我的脸值</item>
+        <item>我的龙币</item>
+        <item>名片编辑</item>
+        <item>产品管理</item>
+        <!-- 
+        <item>好友推荐</item>
+        <item>好友列表</item>
+        <item>名片转发</item>
+         -->
+        <item>分享</item>
+        <item>软件设置</item>
+        <item>帮助中心</item>
+    </string-array>
+    <integer-array name="individual_info_icon">
+        <item>@drawable/ico_info_face_value</item>
+        <item>@drawable/ico_info_virtual_currency</item>
+        <item>@drawable/ico_info_card_edit</item>
+        <item>@drawable/ico_info_product_manager</item>
+        <!-- 
+        <item>@drawable/ico_info_friends_recommend</item>
+        <item>@drawable/ico_info_friends_related</item>
+        <item>@drawable/ico_info_card_transmit</item>
+         -->
+        <item>@drawable/ico_info_share</item>
+        <item>@drawable/ico_info_settings</item>
+        <item>@drawable/ico_info_hekp</item>
+    </integer-array>
+    <string-array name="tab_product_manager">
+        <item>产品列表</item>
+        <!-- <item>市场设置</item> -->
+        <item>扣分统计</item>
+    </string-array>
+    <string-array name="tab_transmit_info">
+        <item>别人转发给我</item>
+        <item>我转发给别人</item>
+    </string-array>
+    <string-array name="tab_card_setting_info">
+        <item>名片编辑</item>
+        <item>名片设置</item>
+    </string-array>
+    
+    <!-- 产品分类 -->
+    <string-array name="tab_product_classify_info">
+        <item>服务</item>
+        <item>租赁</item>
+        <item>活动</item>
+        <item>二手</item>
+        <item>零售</item>
+        <item>批发</item>
+        <item>厂家</item>
+        <item>加盟</item>
+        <item>招聘</item>
+    </string-array>
+    <string-array name="week_info">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    <string-array name="user_level_info">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    
+</resources>

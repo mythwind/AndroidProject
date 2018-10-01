@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">脸值</string>
+    
+    <string name="tab_credit">信用从高-低</string>
+    <string name="tab_profession">专业从高-低</string>
+    <string name="tab_price">价格从低-高</string>
+    <string name="tab_distance">距离从近-远</string>
+    <string name="contentDescription">ImageView Content Description</string>
+    
+    <string name="positive_button">确定</string>
+    <string name="negative_button">取消</string>
+    <string name="prompt">提示</string>
+    <string name="operate_success">操作成功!</string>
+    <string name="operate_failed">操作失败!</string>
+    <string name="dialog">对话框</string>
+    <string name="complete">完成</string>
+    
+    <string name="between">-</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="clear">清除</string>
+    <string name="agreement">同意</string>
+    <string name="disagree">不同意</string>
+    <string name="modify">修改</string>
+    <string name="offline">下架</string>
+    <string name="publish">发布</string>
+    <string name="delete">删除</string>
+    <string name="loading">加载中 &#8230;</string>
+    <string name="exit_application">亲~，再按一次返回键就退出应用了哦</string>
+    <string name="network_unavailable">网络不可用!</string>
+    <string name="network_timeout">请求网络失败，请检查网络</string>
+    <string name="network_server_error">服务器开小差啦，请稍后再试哟！</string>
+
+    <string name="card_setting_check">查看设置</string>
+    <string name="card_setting_searchable">是否允许被搜索</string>
+    <string name="card_setting">名片设置</string>
+    <string name="card_setting_success">名片设置成功!</string>
+    <string name="card_setting_failed">名片设置失败!</string>
+    <string name="card_setting_check_level">我是<Data><![CDATA[ <font color="#FF3400">%1$s</font> ]]></Data>等级用户，允许<Data><![CDATA[ <font color="#FF3400">%2$s</font> ]]></Data>等级以上用户查看</string>
+    <string name="card_edit">名片编辑</string>
+    <string name="card_allow_search">允许被搜索出</string>
+    <string name="card_not_allow_search">不允许被搜索出(vip激活设置)</string>
+    <string name="card_personal">个人名片</string>
+    <string name="card_business">商务名片</string>
+    <string name="card_transmit">名片转发</string>
+    
+    <string name="dialog_title">title</string>
+    <string name="distance">距离</string>
+    <string name="dialog_delete_title">删除%1$s</string>
+    <string name="dialog_delete_message">是否确认删除%1$s？</string>
+    
+    <string name="face_value_real">我的脸价值：</string>
+    <string name="face_value_potential">潜在脸价值：</string>
+    <string name="face_value_add">昨日新增脸价值：</string>
+    
+    <string name="integral_purchase">购买龙币</string>
+    <string name="integral_total">总龙币：<Data><![CDATA[ <font color="#FF3400">%1$s</font> ]]></Data></string>
+    
+    <string name="user_name">用户名</string>
+    <string name="user_gender">性别</string>
+    <string name="user_gender_male">男</string>
+    <string name="user_gender_female">女</string>
+    <string name="user_password">密码</string>
+    <string name="user_login">登录我的官方商务中心</string>
+    <string name="user_forget_username">忘记密码？</string>
+    <string name="user_no_username">注册新用户</string>
+    <string name="user_name_empty">用户名不能为空!</string>
+    <string name="user_password_empty">密码不能为空!</string>
+    <string name="user_password_different">两次密码不一致!</string>
+    <string name="user_email_empty">邮箱不能为空!</string>
+    <string name="user_email_error">邮箱格式不正确!</string>
+    <string name="user_level_limit">保密(等级六可查看)</string>
+    <string name="user_level">用户等级</string>
+    <string name="user_level_01">等级一（名片编辑）</string>
+    <string name="user_level_02">等级二（上传头像）</string>
+    <string name="user_level_03">等级三（上传身份证）</string>
+    <string name="user_level_04">等级四（验证身份证）</string>
+    <string name="user_level_05">等级五（开通企业账户）</string>
+    <string name="user_level_06">等级六（申请 VIP）</string>
+    
+    <string name="login">登录</string>
+    <string name="login_failed">登陆失败，用户或者密码不正确！</string>
+    <string name="login_with_other">Login with the following</string>
+    
+    <string name="friend_name">好友名称</string>
+    
+    <string name="individual_title">我的管理中心</string>
+    <string name="individual_level">等级：%1$s</string>
+    <string name="upload_picture">上传照片</string>
+    <string name="sgin_obtain_currency">签到获取龙币</string>
+    
+    <string name="person_title">龙之向导</string>
+    <string name="person_face_value">脸值：%1$s</string>
+    
+    <string name="person_credit">信用度</string>
+    <string name="person_perfession">专业度</string>
+    
+    <string name="person_name">姓名</string>
+    <string name="person_card_title">从事工作</string>
+    <string name="person_mobile">手机</string>
+    <string name="person_telephone">电话</string>
+    <string name="person_email">邮箱</string>
+    <string name="person_soft_name">软件名称</string>
+    <string name="person_soft_num">软件号码</string>
+    <string name="person_worktime">工作时间</string>
+    <string name="person_category">职业类别</string>
+    <string name="person_choose_city">选择省市</string>
+    <string name="person_address">详细地址</string>
+    <string name="person_login_prompt">登录后可以查看</string>
+    <string name="person_add_friend">加好友</string>
+    <string name="person_add_attention">加关注</string>
+    <string name="person_add_attention_msg">确定要关注此用户吗？</string>
+    <string name="person_add_black">拉黑</string>
+    <string name="person_transmit">转发</string>
+    
+    <string name="item_product_name">名称：%1$s</string>
+    <string name="item_product_price">价格：<Data><![CDATA[ <font color="#FF3400">￥%1$s</font> ]]></Data></string>
+    <string name="item_rmb_price">￥%1$s</string>
+    <string name="item_rmb_symbol">￥</string>
+    <string name="idcard_name">用户姓名</string>
+    <string name="idcard_upload">上传身份证</string>
+    <string name="idcard_certificate_name">证件名称</string>
+    <string name="idcard">居民身份证</string>
+    <string name="idcard_number">身份证号码</string>
+    
+    <string name="product_add_title">添加产品</string>
+    <string name="product_edit_title">修改产品</string>
+    <string name="product_detail">产品详情</string>
+    <string name="product_detail_setting">产品详细设置</string>
+    <string name="product_detail_title">产品标题</string>
+    <string name="product_detail_vip_price">会员价格</string>
+    <string name="product_detail_price">市场价格</string>
+    <string name="product_detail_profession">选择职业</string>
+    <string name="product_detail_category">产品类别</string>
+    <string name="product_detail_category_value">产品类别：%1$s</string>
+    <string name="product_detail_trade_value">老板职业：%1$s</string>
+    <string name="product_detail_profession_value">职业专业：%1$s</string>
+    <string name="product_detail_desc">产品介绍</string>
+    <string name="product_add_select_trade">选择您的职业</string>
+    <string name="product_setting_search">设置搜索条件</string>
+    <string name="product_setting_save">保存并搜索</string>
+    
+    <string name="click_deduct_currency">点击扣除龙币</string>
+    <string name="click_count">被点击数</string>
+    <string name="ranking">排名</string>
+    <string name="virtual_currency">我的账户龙币</string>
+    <string name="keywords_deduct_total">关键字预扣总龙币</string>
+    <string name="keywords_setting">设置关键字</string>
+    <string name="keywords_btn_setting">关键字设置</string>
+    <string name="keywords_add_setting">添加关键字设置</string>
+    <string name="keywords_add_continue">继续添加关键字</string>
+    <string name="keywords">关键字</string>
+    <string name="delete_setting">删除设置</string>
+    
+    <string name="current_day">当日</string>
+    <string name="current_week">当周</string>
+    <string name="current_month">当月</string>
+    <string name="deduction_total">总扣分</string>
+    <string name="deduction_search">检索</string>
+    <string name="time_start">开始时间</string>
+    <string name="time_end">结束时间</string>
+    <string name="date_interval_prompt">结束日期不能早于开始日期</string>
+    
+    <string name="agreement_title">服务协议</string>
+    
+    <string name="commit">提交</string>
+    
+    <string name="reset_password_by_email">使用登陆邮箱找回密码</string>
+    <string name="reset_password">找回密码</string>
+    
+    <string name="error_message">Oops! Something wrong happened</string>
+    <string name="error_button">Try again</string>
+    <string name="empty_message">No items yet</string>
+    <string name="empty_button">Try again</string>
+    <string name="loading_message">Please wait</string>
+    <string name="loading_button">Cancel</string>
+    
+    <string name="hint_user_name">请输入登录邮箱</string>
+    <string name="hint_user_password">请输入密码</string>
+    <string name="hint_user_password_old">原始密码不能为空</string>
+    <string name="hint_user_password_new">新密码不能为空</string>
+    <string name="hint_user_password_confirm">请确认新密码</string>
+    <string name="hint_user_password_differ">两次输入密码不一致</string>
+    <string name="hint_password_edit_success">密码修改成功</string>
+    <string name="hint_view_after_login">登陆后可查看</string>
+    <string name="hint_confirm_password">确认密码</string>
+    <string name="hint_email">请输入您的邮箱</string>
+    <string name="hint_real_name">请输入真实姓名</string>
+    <string name="hint_search_product">产品、服务、个人名片</string>
+    <string name="hint_not_empty">改项不能为空!</string>
+    <string name="hint_integral_exceed">点击龙币不能超过预设龙币</string>
+    <string name="hint_purchase_amount">请输入购买金额</string>
+    <string name="hint_keywords">请输入关键字</string>
+    <string name="hint_number">请输入数字</string>
+    <string name="hint_keyword_setting_deduct">点击扣除龙币数必须大于0</string>
+    <string name="hint_deduction_empty">暂无数据，请简化关键字或者扩大搜索时间段</string>
+    <string name="hint_card_setting_promp">等级六开通设置</string>
+    
+    <string name="registe_agreement">&#060;&#060;有熊网络 服务协议&#062;&#062;</string>
+    <string name="registe_agreement_first">请先确认同意服务协议才能注册</string>
+    <string name="registe_title">注册</string>
+    <string name="registe">同意协议并注册</string>
+    <string name="registe_success">注册成功，请到注册邮箱验证激活后登陆</string>
+    
+    <string name="recharge_amount">我的账户金额</string>
+    <string name="recharge_title">我的账户资金</string>
+    <string name="recharge_purchase_amount">购买金额</string>
+    <string name="recharge_integral">获得龙币</string>
+    
+    <string name="share_title">分享</string>
+    <string name="share_comments">分享到朋友圈</string>
+    <string name="share_sina_weibo">分享到新浪微博</string>
+    <string name="share_others">分享到其他</string>
+    
+    <string name="select_friend">选择商友</string>
+    <string name="search">搜索</string>
+    <string name="hot_search_keyword">热门搜索</string>
+    
+    <string name="setting_upgrade">版本更新</string>
+    <string name="setting_user_level">用户等级设置</string>
+    <string name="setting_friend_category">商友分类等级设置</string>
+    <string name="setting_friend_category_title">商友分类</string>
+    <string name="setting_safe_code">安全码设置</string>
+    <string name="setting_update_safe_code">修改安全码：</string>
+    <string name="setting_update_safe_code_prompt">未设置安全码，请设置，保障账户安全</string>
+    <string name="setting_update_safe_code_confirm">确定修改安全码</string>
+    <string name="setting_old_password">原始密码</string>
+    <string name="setting_new_password">新密码</string>
+    <string name="setting_new_password_confirm">确认密码</string>
+    <string name="setting_update_password">修改密码</string>
+    <string name="setting_update_password_confirm">确定修改密码</string>
+    <string name="setting_update_email">登录邮箱修改</string>
+    <string name="setting_update_email_confirm">确定修改邮箱</string>
+    <string name="setting_new_email">新邮箱：</string>
+    <string name="setting_logout">退出登录</string>
+    <string name="setting_level_3_title">等级三-上传身份证</string>
+    
+    <string name="sign_successed">签到成功!当前总龙币数为 %1$s</string>
+    
+    <string name="edit">编辑</string>
+    <string name="update_latest_version">已经是最新版本了</string>
+    <string name="update_wifi_only">没有wifi连接， 只在wifi下更新</string>
+    
+    <string name="transmit_shielding">屏蔽市场转发</string>
+    <string name="trade_title">职业身份</string>
+    <string name="edit_selected_condition">编辑已选条件</string>
+    <string name="trade_condition_empty">尚未选择，请选择条件</string>
+    <string name="trade_selected_upper_limit">最多可以选%1$s个</string>
+    
+    <string name="virtual_currency_desc">事件</string>
+    <string name="virtual_currency_amount">加减数</string>
+    <string name="virtual_currency_time">时间</string>
+    
+    <string name="immediately_experience">立即体验</string>
+    
+</resources>

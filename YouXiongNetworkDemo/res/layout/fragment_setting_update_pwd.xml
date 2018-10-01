@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10.0dip"
+            android:background="@color/white"
+            android:shrinkColumns="1"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:minHeight="48.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/setting_old_password"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color" />
+
+                <EditText 
+                    android:id="@+id/setting_et_update_pwd_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_user_password_old"
+                    android:inputType="textPassword"
+                    style="@style/EditTextStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/setting_new_password"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color" />
+
+                <EditText 
+                    android:id="@+id/setting_et_update_pwd_new"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_user_password"
+                    android:inputType="textPassword"
+                    style="@style/EditTextStyle" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48.0dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="@string/setting_new_password_confirm"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/text_color" />
+
+                <EditText 
+                    android:id="@+id/setting_et_update_pwd_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_confirm_password"
+                    android:inputType="textPassword"
+                    style="@style/EditTextStyle" />
+            </TableRow>
+        </TableLayout>
+    
+        <TextView
+            android:id="@+id/setting_tv_update_pwd_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:background="@drawable/btnbg_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="@string/setting_update_password_confirm"
+            android:textSize="21sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

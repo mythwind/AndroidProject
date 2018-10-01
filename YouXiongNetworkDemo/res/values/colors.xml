@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="semitransparent">#55000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+	<color name="blue">#FF00FF00</color>
+	<color name="graybg">#FFEFEFF4</color>
+	<color name="gray">#FF8D8D8D</color>
+	
+	<color name="cancel_text_n">#FF000000</color>
+    <color name="cancel_text_s">#FFCCCCCC</color>
+    <color name="search_item_bg_s">#FFF2F2F2</color>
+    
+    <color name="login_background">#FFEFEFEF</color>
+    <color name="divide_line">#FFE1E1E1</color>
+    
+    <color name="text_color">#FF646464</color>
+    <color name="text_color_hint">#FFD7D7D5</color>
+    <color name="base_title_text_color">#FFFFFFFF</color>
+    
+    <color name="login_text_color">#FFB9B9B9</color>
+    <color name="dark_gray">#FF383838</color>
+    
+    <color name="background_tab_pressed">#6633B5E5</color>
+    
+    <color name="button_normal">#FFEFEFEF</color>
+    <color name="button_pressed">#FF999999</color>
+    
+    <color name="holo_blue">#FF33E5B5</color>
+    
+    <color name="resume_e7e7e7">#FFE7E7E7</color>
+    <color name="c250">#FFFAFAFA</color>
+    
+    <color name="product_edit_n">#FF3F8100</color>
+    <color name="product_edit_p">#FFFFD700</color>
+    <color name="product_edit_d">#FF808080</color>
+    
+    <color name="item_press_color">#FFE9ECF1</color>
+    
+    <color name="item_disable_color">#FFC6C6C6</color>
+    <color name="product_detail_p">#FFECEBEB</color>
+    
+    <color name="common_bg_color">#FFE9ECF1</color>
+    <color name="color_holo_light">#FFFF3400</color>
+    
+    <color name="color_shre_pressed">#F1F1F1</color>
+    
+</resources>

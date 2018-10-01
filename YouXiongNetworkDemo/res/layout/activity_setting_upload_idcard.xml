@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/view_upload_idcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:id="@+id/iv_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/arrow_right" />
+
+        <ImageView
+            android:id="@+id/iv_upload_idcard"
+            android:layout_width="78dip"
+            android:layout_height="78dip"
+            android:layout_toLeftOf="@id/iv_arrow_right"
+            android:contentDescription="@string/contentDescription"
+            android:padding="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/product_add_iv_icon"
+            android:src="@drawable/ic_launcher"
+            android:text="@string/idcard_upload"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View style="@style/DivideLineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idcard_certificate_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:text="@string/idcard"
+            android:textColor="@color/color_holo_light"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/DivideLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/view_idcard_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idcard_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_idcard_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/DivideLineStyle" />
+
+    <LinearLayout
+        android:id="@+id/view_idcard_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idcard_number"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_idcard_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:gravity="right"
+            android:textColor="@color/color_holo_light"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/DivideLineStyle" />
+
+    <TextView
+        android:id="@+id/commit"
+        style="@style/ButtonCommitStyle"
+        android:text="@string/commit" />
+
+</LinearLayout>

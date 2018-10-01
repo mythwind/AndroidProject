@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 
+     	app:pstsIndicatorColor="#FF008AFF"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="false"
+        app:pstsDividerPadding="0dp"
+        app:pstsUnderlineColor="#FFC0C0C0"
+        app:pstsUnderlineHeight="1px"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsTabPaddingLeftRight="0dp"
+    -->
+    <me.youxiong.person.view.PagerSlidingTabStrip
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/i_48dp"
+        android:background="@color/white"
+        
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineHeight="1dp"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsTabPaddingLeftRight="0dp" />
+    
+    <com.jfeinstein.jazzyviewpager.JazzyViewPager
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/jazzy_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

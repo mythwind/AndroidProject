@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="button_item_margin_left">10.0dip</dimen>
+    
+    <dimen name="base_title_layout_height">50.0dip</dimen>
+    <dimen name="base_title_layout_height_small">45.0dip</dimen>
+    
+    <dimen name="MiddlePadding">10.0dip</dimen>
+    <dimen name="LargerPadding">24.0dip</dimen>
+    
+    <dimen name="login_padding">25.0dip</dimen>
+    
+    <dimen name="button_commit_minheight">48.0dip</dimen>
+    <dimen name="common_minheight">48.0dip</dimen>
+    
+    <dimen name="i_48dp">48.0dip</dimen>
+    <dimen name="i_40dp">40.0dip</dimen>
+    <dimen name="i_35dp">35.0dip</dimen>
+    <dimen name="keywords_setting_margin">10dip</dimen>
+    
+    <dimen name="dialog_item_padding">8.0dip</dimen>
+    
+    <dimen name="position_detail_jobname_width">220.0dip</dimen>
+    <dimen name="seek_but_height">48.0dip</dimen>
+    
+    <dimen name="icon_width">70dp</dimen>
+    <dimen name="icon_height">80dp</dimen>
+    <dimen name="icon_width_medium">105dp</dimen>
+    <dimen name="icon_height_medium">120dp</dimen>
+    <dimen name="icon_width_big">140dp</dimen>
+    <dimen name="icon_height_big">160dp</dimen>
+   	
+</resources>

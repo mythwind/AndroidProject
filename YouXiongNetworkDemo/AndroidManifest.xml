@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.youxiong.person"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+	
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    
+    <!-- sdcard 读写权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    
+    <!-- 定位的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    
+    <application 
+        android:name="me.youxiong.person.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppStartLoadTranslucent" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name=".ui.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserForgetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserRegisteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.IndividualCenterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchableActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.FriendsRelatedActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.FriendsRecommendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PersonalInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PersonProductDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PersonProductPhotoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.GotoTransmitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SelectFriendsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.IntegralActivity"
+            android:screenOrientation="portrait" />
+        <!-- 进入充值界面 -->
+        <activity
+            android:name=".ui.RechargeActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.CardEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".ui.TradeSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductManagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ProductDescriptionActivity"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".ui.ProductAddKeySettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CardTransmitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SettingDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.SettingUploadIDCardActivity" 
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.base.WebviewActivity"
+            android:screenOrientation="portrait" />
+        
+        <!-- 脸值 -->
+        <activity
+            android:name=".ui.FaceValueActivity"
+            android:screenOrientation="portrait" />
+        <!-- 分享  -->
+        <activity
+            android:name=".ui.ShareActivity"
+            android:screenOrientation="portrait" />
+        <!-- 帮助中心 -->
+        <activity
+            android:name=".ui.HelpActivity"
+            android:screenOrientation="portrait" />
+        
+		
+		<!-- 定位 SDK -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="9le5KWMs8wwPAw2uYGgQh1aw" />
+        
+        <!-- 第三方登录 -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101508244" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name="com.umeng.update.UpdateDialogActivity"
+		  	android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+        
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54f92491fd98c521000010af" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="daxiong" />
+        
+    </application>
+
+</manifest>

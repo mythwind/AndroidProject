@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_panel"
+    android:layout_width="298.0dip"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="12.0dip"
+    android:paddingRight="12.0dip" >
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/alertTitle"
+            style="?android:attr/textAppearanceLarge"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="10.0dip"
+            android:singleLine="true"
+            android:text="@string/dialog_title"
+            android:textColor="#ff33b5e5"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/alertSubTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingBottom="10.0dip"
+            android:paddingLeft="12.0dip"
+            android:singleLine="true"
+            android:textColor="#ff33b5e5"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_divider"
+            android:contentDescription="@string/contentDescription" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/contentPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title_layout"
+        android:layout_alignRight="@id/title_layout"
+        android:layout_below="@id/title_layout"
+        android:paddingTop="12.0dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/message"
+            style="?android:attr/textAppearanceMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dialog_item_padding"
+            android:paddingRight="@dimen/dialog_item_padding"
+            android:textColor="#ff000000"
+            android:textSize="18.0sp" />
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/custom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contentPanel"
+        android:paddingTop="12.0dip" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/custom"
+        android:orientation="horizontal"
+        android:paddingTop="12.0dip" >
+
+        <Button
+            android:id="@+id/button_left"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1.0"
+            android:background="@drawable/center_button"
+            android:singleLine="true"
+            android:minHeight="48dip"
+            android:text="@string/positive_button"
+            android:textColor="@color/black_white"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/center_button"
+            android:singleLine="true"
+            android:minHeight="48dip"
+            android:text="@string/positive_button"
+            android:textColor="@color/black_white"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_right"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1.0"
+            android:background="@drawable/center_button"
+            android:singleLine="true"
+            android:minHeight="48dip"
+            android:text="@string/negative_button"
+            android:textColor="@color/black_white"
+            android:textSize="14.0sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/progress_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@drawable/center_button_normal"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                style="@style/base_small_progressbar_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View style="@style/DivideLineStyle" />
+        
+        <TextView 
+            android:id="@+id/setting_tv_user_level_01"
+            style="@style/TextSettingStyle"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:text="@string/user_level_01" />
+
+        <View style="@style/DivideLineStyle"/>
+
+        <TextView 
+            android:id="@+id/setting_tv_user_level_02"
+            style="@style/TextSettingStyle"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:text="@string/user_level_02" />
+
+        <View style="@style/DivideLineStyle"/>
+        
+        <TextView 
+            android:id="@+id/setting_tv_user_level_03"
+            style="@style/TextSettingStyle"
+            android:drawableRight="@drawable/arrow_right"
+            android:drawablePadding="16dp"
+            android:text="@string/user_level_03" />
+
+        <View style="@style/DivideLineStyle"/>
+        
+        <TextView
+            android:id="@+id/setting_tv_user_level_04"
+            style="@style/TextSettingStyle"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/user_level_04" />
+
+        <View style="@style/DivideLineStyle"/>
+        
+        <TextView 
+            android:id="@+id/setting_tv_user_level_05"
+            style="@style/TextSettingStyle"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/user_level_05" />
+
+        <View style="@style/DivideLineStyle"/>
+        
+        <TextView 
+            android:id="@+id/setting_tv_user_level_06" 
+            style="@style/TextSettingStyle"
+            android:drawablePadding="16dp"
+            android:drawableRight="@drawable/arrow_right"
+            android:text="@string/user_level_06" />
+
+        <View style="@style/DivideLineStyle"/>
+        
+    </LinearLayout>
+
+</ScrollView>

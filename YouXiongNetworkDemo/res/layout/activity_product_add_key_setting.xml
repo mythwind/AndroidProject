@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+		<LinearLayout 
+		    android:id="@+id/view_keywords_deduct_total"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/item_selector"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+		    <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="@string/keywords_deduct_total"
+		        android:textSize="16sp" />
+		    
+		    <TextView 
+		        android:id="@+id/tv_keywords_deduct_total"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dip"
+		        android:layout_marginRight="10dip"
+		        android:gravity="right" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_product_add_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/keywords_setting_margin"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/product_add_tv_continue"
+            style="@style/ButtonCommitStyle"
+            android:text="@string/keywords_add_continue" />
+    </LinearLayout>
+
+</ScrollView>

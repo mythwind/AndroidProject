@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECF1"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/DivideLineStyle"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tv_card_setting_level_limit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:text="@string/card_setting_check_level"  
+        android:drawableRight="@drawable/arrow_right"
+        android:drawablePadding="10dip" />
+
+    <View style="@style/DivideLineStyle" />
+
+    <RelativeLayout
+        android:id="@+id/view_allow_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:clickable="true"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/card_setting_searchable" />
+
+        <CheckBox
+            android:id="@+id/cb_card_setting_allow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:checked="true"
+            android:button="@drawable/setting_checkbox" />
+    </RelativeLayout>
+
+    <View style="@style/DivideLineStyle" />
+	<!-- 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_selector"
+        android:gravity="center_vertical"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_setting" />
+
+        <RadioGroup
+            android:id="@+id/card_type_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:checkedButton="@+id/card_personal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/card_personal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/btn_radio_holo_light"
+                android:text="@string/card_personal" />
+
+            <RadioButton
+                android:id="@+id/card_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/btn_radio_holo_light"
+                android:text="@string/card_business" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/DivideLineStyle" />
+	-->
+	
+    <TextView
+        android:id="@+id/card_setting_commit"
+        style="@style/ButtonCommitStyle"
+        android:text="@string/commit" />
+
+</LinearLayout>

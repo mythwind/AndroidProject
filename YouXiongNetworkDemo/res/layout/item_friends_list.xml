@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:descendantFocusability= "blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="10dip" >
+
+    <CheckBox 
+        android:id="@+id/item_friends_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <ImageView 
+        android:id="@+id/item_friends_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dip"
+        android:src="@drawable/friend_head"
+        android:contentDescription="@string/contentDescription" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView 
+            android:id="@+id/item_friends_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="熊晓寒"
+            android:textColor="#FF3A690D"
+            android:textSize="18sp" />
+
+        <TextView 
+            android:id="@+id/item_friends_occupation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dip"
+            android:text="龙之向导"
+            android:textColor="#FF888888"
+            android:textSize="16sp" />
+    </LinearLayout>
+    
+     <FrameLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+	    <TextView 
+	        android:id="@+id/item_friends_tips"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:text="@string/clear"
+	        android:clickable="true"
+	        style="@style/ProductTextStyle"
+	        android:visibility="gone" />
+	    <TextView 
+	        android:id="@+id/item_friends_distance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_margin="6dip"
+	        android:padding="5dip"
+	        android:textSize="14sp"
+	        android:textColor="#FF888888"
+	        android:visibility="visible" />
+	    <LinearLayout 
+	       	android:id="@+id/item_friends_layer"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone">
+	        <TextView 
+		        android:id="@+id/item_friends_ignore"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" 
+		        android:clickable="true"
+		        style="@style/ProductTextStyle"
+		        android:layout_margin="4dip"
+		        android:text="@string/disagree" />
+		    <TextView 
+		        android:id="@+id/item_friends_agree"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:clickable="true"
+		        style="@style/ProductTextStyle"
+		        android:layout_margin="4dip"
+		        android:text="@string/agreement" />
+	    </LinearLayout>
+    </FrameLayout>
+    
+
+</LinearLayout>

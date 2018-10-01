@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:descendantFocusability= "blocksDescendants"
+    android:background="@drawable/item_individual_selector"
+    android:orientation="vertical"
+    android:padding="10dip" >
+
+    <ImageView 
+        android:id="@+id/iv_item_deduction_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="8dip"
+        android:src="@drawable/friend_head"
+        android:contentDescription="@string/contentDescription" />
+    
+    <TextView
+        android:id="@+id/tv_item_deduction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF3A690D"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_item_deduction_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF3A690D"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_item_deduction_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF3A690D"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/tv_item_deduction_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:textColor="#FF3A690D"
+        android:textSize="13sp" />
+    
+</LinearLayout>

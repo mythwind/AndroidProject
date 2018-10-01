@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_item_individual"
+    android:layout_width="100dip"
+    android:layout_height="100dip"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    android:padding="10dip" 
+    android:background="@drawable/item_individual_selector"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:scaleType="fitXY" 
+        android:contentDescription="@string/contentDescription" />
+
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+
+<!-- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:orientation="vertical" >
+    
+    <ImageView 
+        android:id="@+id/item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/contentDescription" />
+    <ImageView 
+        android:id="@+id/item_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_right"
+        android:contentDescription="@string/contentDescription" />
+    <TextView 
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_icon"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_launcher"/>
+    <TextView 
+        android:id="@+id/item_text_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_text"
+        android:layout_toLeftOf="@id/item_arrow"
+        android:layout_marginLeft="15dip"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
+ -->
+ 

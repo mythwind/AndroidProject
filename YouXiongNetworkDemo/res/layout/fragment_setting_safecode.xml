@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <EditText 
+            android:id="@+id/setting_et_safecode_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:hint="请输入您的安全码"
+            android:textColor="#646464"
+            android:textSize="20sp" />
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="14dp"
+             android:layout_marginLeft="18dp"
+             android:text="@string/setting_update_safe_code_prompt"
+             android:textColor="#FE3200" />
+
+        <TextView
+            android:id="@+id/setting_tv_safecode_commit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp"
+            android:background="@drawable/btnbg_selector"
+            android:gravity="center"
+            android:padding="12dip"
+            android:text="@string/setting_update_safe_code_confirm"
+            android:textSize="21sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

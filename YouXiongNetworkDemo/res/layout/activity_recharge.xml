@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color">
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:gravity="center_horizontal"
+	    android:orientation="vertical" >
+	
+	    <LinearLayout
+	        android:id="@+id/view_recharge_amount"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/item_selector"
+	        android:gravity="center_vertical"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/recharge_amount"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_recharge_amount"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:gravity="right"
+	            android:textSize="16sp"
+	            android:textColor="#FF3400" />
+	    </LinearLayout>
+	
+	    <View style="@style/DivideLineStyle" />
+	
+	    <LinearLayout
+	        android:id="@+id/view_recharge_integral_total"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/item_selector"
+	        android:gravity="center_vertical"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/virtual_currency"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_recharge_integral_total"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:gravity="right"
+	            android:textSize="16sp"
+	            android:textColor="#FF3400" />
+	    </LinearLayout>
+	
+	    <View style="@style/DivideLineStyle" />
+	
+	    <View 
+	        android:layout_marginTop="20dp"
+	        style="@style/DivideLineStyle" />
+	    
+	    <LinearLayout
+	        android:id="@+id/view_recharge_purchase"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/item_selector"
+	        android:gravity="center_vertical"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/recharge_purchase_amount"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_recharge_purchase"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:gravity="right"
+	            android:textSize="16sp"
+	            android:hint="@string/hint_purchase_amount" />
+	    </LinearLayout>
+	
+	    <View style="@style/DivideLineStyle" />
+	    <LinearLayout
+	        android:id="@+id/view_recharge_get_integral"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/item_selector"
+	        android:gravity="center_vertical"
+	        android:minHeight="48dp"
+	        android:paddingLeft="16dp"
+	        android:paddingRight="16dp" >
+	
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/recharge_integral"
+	            android:textSize="16sp" />
+	
+	        <TextView
+	            android:id="@+id/tv_recharge_get_integral"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:gravity="right"
+	            android:textSize="16sp" />
+	    </LinearLayout>
+	
+	    <View style="@style/DivideLineStyle" />
+	    
+	    <TextView
+            android:id="@+id/tv_recharge_commit"
+            style="@style/ButtonCommitStyle"
+            android:text="@string/confirm" />
+	    
+	</LinearLayout>
+	
+	<include layout="@layout/hint_loading_layout"/>
+	
+</FrameLayout>

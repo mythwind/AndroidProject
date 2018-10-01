@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="Assert" severity="ignore" />
+    <issue id="ClickableViewAccessibility" severity="ignore" />
+    <issue id="DefaultLocale" severity="ignore" />
+    <issue id="DrawAllocation" severity="ignore" />
+    <issue id="FloatMath" severity="ignore" />
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/me/youxiong/person/utils/Utility.java" />
+    </issue>
+    <issue id="Recycle" severity="ignore" />
+    <issue id="SdCardPath" severity="ignore" />
+    <issue id="SimpleDateFormat" severity="ignore" />
+    <issue id="UseSparseArrays" severity="ignore" />
+    <issue id="UseValueOf" severity="ignore" />
+</lint>

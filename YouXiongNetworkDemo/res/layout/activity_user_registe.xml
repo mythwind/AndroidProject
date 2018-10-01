@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+     <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/setting_item_bg"
+        android:shrinkColumns="1"
+        android:stretchColumns="1" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/login_padding"
+            android:paddingRight="@dimen/login_padding"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/registe_real_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:hint="@string/hint_real_name"
+                android:text="张三"
+                android:inputType="textEmailAddress"
+                style="@style/EditTextStyle" />
+        </TableRow>
+
+        <View style="@style/DivideLineStyle" />
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/login_padding"
+            android:paddingRight="@dimen/login_padding"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_gender"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <RadioGroup 
+		        android:id="@+id/registe_gender"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="8dip"
+		        android:gravity="center_vertical"
+		        android:checkedButton="@+id/registe_gender_male"
+		        android:orientation="horizontal">
+		        <RadioButton 
+		            android:id="@+id/registe_gender_male"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:button="@drawable/btn_radio_holo_light"
+		            android:text="@string/user_gender_male" />
+		        <RadioButton 
+		            android:id="@+id/registe_gender_female"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="10dip"
+		            android:button="@drawable/btn_radio_holo_light"
+		            android:text="@string/user_gender_female" />
+		    </RadioGroup>
+        </TableRow>
+        <View style="@style/DivideLineStyle" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/login_padding"
+            android:paddingRight="@dimen/login_padding"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_name"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/registe_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:hint="@string/hint_user_name"
+                android:text="419875385@qq.com"
+                android:inputType="textEmailAddress"
+                style="@style/EditTextStyle" />
+        </TableRow>
+
+        <View style="@style/DivideLineStyle" />
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/login_padding"
+            android:paddingRight="@dimen/login_padding"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/user_password"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/registe_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:hint="@string/hint_user_password"
+                android:text="123456"
+                android:inputType="textPassword"
+                style="@style/EditTextStyle" />
+        </TableRow>
+
+        <View style="@style/DivideLineStyle" />
+        
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/login_padding"
+            android:paddingRight="@dimen/login_padding"
+            android:minHeight="48.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hint_confirm_password"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/text_color" />
+
+            <EditText
+                android:id="@+id/registe_confirm_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:hint="@string/hint_confirm_password"
+                android:text="123456"
+                android:inputType="textPassword"
+                style="@style/EditTextStyle" />
+        </TableRow>
+
+        <View style="@style/DivideLineStyle" />
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/login_padding"
+        android:paddingRight="@dimen/login_padding"
+        android:minHeight="48.0dip"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/registe_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+
+        <TextView 
+            android:id="@+id/registe_tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registe_agreement"
+            android:textColor="#1E90FF" />
+    </LinearLayout>
+        
+    <TextView
+        android:id="@+id/registe"
+        style="@style/ButtonCommitStyle"
+        android:text="@string/registe" />
+
+</LinearLayout>

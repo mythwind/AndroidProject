@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.youxiong.person.view.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg_color"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/individual_title_bg"
+            android:orientation="vertical" >
+
+            <me.youxiong.person.view.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/individual_pic"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/head_bg_selector"
+                app:border_color="#ffffffff"
+                app:border_width="2dp" />
+
+            <TextView
+                android:id="@+id/individual_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/individual_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="等级：11"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/individual_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sign_button_selector"
+                android:gravity="center"
+                android:paddingBottom="8dip"
+                android:paddingLeft="12dip"
+                android:paddingRight="12dip"
+                android:paddingTop="8dip"
+                android:singleLine="true"
+                android:text="@string/sgin_obtain_currency"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/DivideLineStyle" />
+
+        <me.youxiong.person.view.NoScrollGridView
+            android:id="@+id/individual_message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="10dip"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:verticalSpacing="15dip"
+            android:padding="5dip" />
+    </LinearLayout>
+
+</me.youxiong.person.view.MyScrollView>

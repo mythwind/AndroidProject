@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/person_operation"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:id="@+id/popup_add_friend"
+        android:drawableLeft="@drawable/person_add_friend"
+        style="@style/PopupTextStyle"
+        android:text="@string/person_add_friend" />
+    
+    <View style="@style/DivideLineStyle" />
+    
+    <TextView 
+        android:id="@+id/popup_add_attention"
+        android:drawableLeft="@drawable/person_add_attention"
+        style="@style/PopupTextStyle"
+        android:text="@string/person_add_attention" />
+    
+    <View style="@style/DivideLineStyle" />
+    
+    <TextView 
+        android:id="@+id/popup_add_black"
+        android:drawableLeft="@drawable/person_add_black"
+        style="@style/PopupTextStyle"
+        android:text="@string/person_add_black" />
+    
+    <View style="@style/DivideLineStyle" />
+    
+    <TextView 
+        android:id="@+id/popup_transmit"
+        android:drawableLeft="@drawable/person_transmit"
+        style="@style/PopupTextStyle"
+        android:text="@string/person_transmit" />
+
+</LinearLayout>
+

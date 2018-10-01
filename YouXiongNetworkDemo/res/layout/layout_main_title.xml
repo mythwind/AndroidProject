@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/base_title_layout_height"
+    android:background="@drawable/base_title_bg" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/base_title_layout_height"
+    	android:layout_height="@dimen/base_title_layout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/head_logo"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/contentDescription" />
+
+     <FrameLayout 
+         android:id="@+id/fl_main_user"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+             android:layout_centerVertical="true" >
+
+         <me.youxiong.person.view.CircleImageView
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/user_pic"
+             android:layout_width="@dimen/base_title_layout_height_small"
+             android:layout_height="@dimen/base_title_layout_height_small"
+             android:layout_marginRight="8dip"
+             android:layout_gravity="center_vertical"
+             android:src="@drawable/head_bg_selector"
+             android:visibility="gone" />
+
+         <ImageView
+             android:id="@+id/user"
+             android:layout_width="@dimen/base_title_layout_height"
+             android:layout_height="@dimen/base_title_layout_height"
+             android:layout_gravity="center_vertical"
+             android:scaleType="centerInside"
+             android:src="@drawable/button_pressed_selector"
+             android:visibility="visible"
+             android:contentDescription="@string/contentDescription" />
+     </FrameLayout>
+
+    <TextView
+        android:id="@+id/main_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="8dip"
+        android:layout_toLeftOf="@id/fl_main_user"
+        android:layout_toRightOf="@id/back"
+        android:drawableLeft="@drawable/search"
+        android:background="@drawable/search_edit_bg"
+        android:gravity="center_vertical"
+        android:padding="5dip"
+        android:text="@string/hint_search_product"
+        android:textColor="#ff404040"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffcccccc" />
+	
+</RelativeLayout>
